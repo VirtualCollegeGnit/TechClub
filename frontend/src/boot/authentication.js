@@ -12,7 +12,7 @@ export default async ({ Vue, router }) => {
       ? "http://localhost:5000"
       : "https://virtualcollege-identity.herokuapp.com",
     // authority: "https://virtualcollege-identity.herokuapp.com",
-    client_id: process.env.DEV ? "techspa" : "spa-prod",
+    client_id: process.env.DEV ? "techspa" : "techspa-prod",
     response_type: "id_token token",
     scope: "openid profile basic_person_read",
     redirect_uri: `${appUrl}/index.html`,
