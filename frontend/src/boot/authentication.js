@@ -6,7 +6,7 @@ export default async ({ Vue, router }) => {
   // something to do
   const appUrl = process.env.DEV
     ? "http://localhost:8081"
-    : "https://virtualcollege.now.sh";
+    : "https://techclub.now.sh";
   let mainOidc = createOidcAuth("main", SignInType.Window, appUrl, {
     authority: process.env.DEV
       ? "http://localhost:5000"
